@@ -19,18 +19,25 @@
 
     .player-controls-panel {
       background-color: black;
+      display: flex;
     }
 
     .js-play-button,
     .js-pause-button,
     .js-mute-button,
-    .js-volume-button {
+    .js-volume-button,
+    .js-fullscreen-button {
       border: none;
       cursor: pointer;
       color: white;
       background-color: transparent;
-      font-size: x-large;
+      font-size: large;
       margin: 5px;
+      width: 40px;
+      height: 40px;
+    }
+    .player-controls-spacer {
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -49,6 +56,10 @@
         </button>
         <button class="js-volume-button" hidden>
           <i class="fa fa-volume-off"></i>
+        </button>
+        <div class="player-controls-spacer"></div>
+        <button class="js-fullscreen-button">
+          <i class="fa fa-expand"></i>
         </button>
       </div>
   </div>
