@@ -8,6 +8,7 @@
     #player {
       width: 800px;
       height: 600px;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
     }
 
     .js-video-container {
@@ -15,7 +16,7 @@
       height: 100%;
     }
 
-    #player > div:nth-child(2) {
+    .player-controls-panel {
       background-color: black;
     }
 
@@ -31,7 +32,7 @@
 <body>
   <div id="player">
       <div class="js-video-container"></div>
-      <div>
+      <div class="player-controls-panel">
         <button class="js-play-button">
           <i class="fa fa-play"></i>
         </button>
